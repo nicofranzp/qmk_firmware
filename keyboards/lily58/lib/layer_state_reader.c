@@ -5,7 +5,8 @@
 #define L_LOWER (1 << 1)
 #define L_RAISE (1 << 2)
 #define L_ADJUST (1 << 3)
-#define L_ADJUST_TRI (L_ADJUST | L_RAISE | L_LOWER)
+#define L_MOUSE (1 << 4)
+#define L_ADJUST_TRI (L_ADJUST | L_RAISE | L_LOWER| L_MOUSE)
 
 char layer_state_str[24];
 
@@ -22,6 +23,11 @@ const char *read_layer_state(void) {
     snprintf(layer_state_str, sizeof(layer_state_str), "Layer: Lower");
     break;
   case L_ADJUST:
+    snprintf(layer_state_str, sizeof(layer_state_str), "Layer: adjusted");
+    break;
+  case L_MOUSE:
+    snprintf(layer_state_str, sizeof(layer_state_str), "Layer: Mouse");
+    break;
   case L_ADJUST_TRI:
     snprintf(layer_state_str, sizeof(layer_state_str), "Layer: Adjust");
     break;
