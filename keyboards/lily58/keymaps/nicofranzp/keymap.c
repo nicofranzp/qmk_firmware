@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_LCTL,  HOME_A,  HOME_S,  HOME_D,  HOME_F,  KC_G,                     KC_H,    HOME_J,  HOME_K,  HOME_L,  HOME_SCLN, KC_QUOT,
   KC_LSFT,  KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, MO(_MOUSE),  DT_PRNT,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,  KC_RSFT,
                         XXXXXXX, MO(_NUMPAD), MO(_SYMBOLS), MT(MOD_LGUI,KC_ENT), MT(MOD_LGUI,KC_SPC), KC_BSPC, MO(_ARROWS), XXXXXXX
-)
+),
 
 /* SYMBOLS
  * ,-----------------------------------------.                    ,-----------------------------------------.
